@@ -317,3 +317,44 @@ tiempo_transcurrido = time.time() - inicio_tiempo
 Dado caso en que nuestro jugador agote su tiempo, finalizara nuestra partida con un break
 
 
+
+# Imágen muñequito siendo ahorcado 
+
+Para ahorcar a nuestro muñequito, hay que embarrarla, es por eso que el espacio destinado para colocar las letras correctas estaran destinada por los caracteres:
+
+```
+['__ ']
+```
+Este caracter se acoplara en funcion de la cantidad de letras que se haya escogido para jugar, y que con cada acierto dicho caracter sea reemplazado con la letra que se debe
+
+EJEMPLO
+
+```
+Palabra buscada: AMA
+
+['_ ', '_ ' , '_ ']
+
+Ingresa una letra: a
+    "A ES CORRECTO"
+    "TE QUEDAN X INTENTOS
+
+
+
+[' a ', '_ ', 'a ']
+
+  "TE QUEDAN X SEGUNDOS"
+ 
+Ingresa una letra: m
+  "M ES CORRECTO"
+
+['a ', 'm ', 'a ']
+
+"HA FINALIZADO EL JUEGO"
+
+
+
+```
+[![sqs.png](https://i.postimg.cc/cJvP138M/sqs.png)](https://postimg.cc/TyXtCp0p)
+
+Este sera nuestro 
+

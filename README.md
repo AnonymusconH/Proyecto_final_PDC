@@ -101,13 +101,13 @@ Bien sea para el nivel de un jugador, o 2 jugadores, el elixir y quien se llevar
 Todos los jugadores contaran con una cantidad base de intentos de solamente 3. Previo a la partida se le dara la opción a que el jugador pueda aumentar el número de intentos, pero eso lo volveria mas noob y por ende la cantidad de puntos disminuye paulatinamente. La pertenencia de puntos en función de la cantidad de intentos adicionales seria asi:
 
 ## INTENTOS BASE: 3 ----> 10 PUNTOS
-## 1 INTENTO EXTRA: 8 PUNTOS
-## 2 INTENTOS EXTRA: 6 PUNTOS
-## 3 INTENTOS EXTRA: 5 PUNTOS
-## 4 INTENTOS EXTRA: 4 PUNTOS
-## 5 INTENTOS EXTRA: 3 PUNTOS
-## 6 INTENTOS EXTRA: 2 PUNTOS
-## 7 INTENTOS EXTRA: 1 PUNTO
+### 1 INTENTO EXTRA: 8 PUNTOS
+### 2 INTENTOS EXTRA: 6 PUNTOS
+### 3 INTENTOS EXTRA: 5 PUNTOS
+### 4 INTENTOS EXTRA: 4 PUNTOS
+### 5 INTENTOS EXTRA: 3 PUNTOS
+### 6 INTENTOS EXTRA: 2 PUNTOS
+### 7 INTENTOS EXTRA: 1 PUNTO
 
 
 ## Listado de palabras a jugar

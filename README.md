@@ -18,8 +18,8 @@ Para la realización de este juego lo compusimos bajo estos factores indispensab
 - Instrucciones y niveles de juego
 - Puntuación
 - Listado de palabras a jugar
-- Imagen de muñequito siendo ahorcado
 - Limite de tiempo
+- Imagen de muñequito siendo ahorcado
 - Juego final
 
 ## Importe de librerias
@@ -327,7 +327,7 @@ Para ahorcar a nuestro muñequito, hay que embarrarla, es por eso que el espacio
 ```
 Este caracter se acoplara en funcion de la cantidad de letras que se haya escogido para jugar, y que con cada acierto dicho caracter sea reemplazado con la letra que se debe
 
-EJEMPLO
+## EJEMPLO
 
 ```
 Palabra buscada: AMA
@@ -353,12 +353,45 @@ INGRESA UNA LETRA: m
 
 ```
 
+Visto en codigo sería asi:
+
+```
+ ingresa_ = str(input("Ingresa una letra: "))
+      ingresa_ = ingresa_.lower()
+      if len(ingresa_) == 1:
+        if ingresa_ in palabra:
+          upper = ingresa_.upper()
+          print(str(upper)+ " ES CORRECTO")
+          contador_ = 0
+          if contador_ == 0:
+            for m in lista:
+              posicion = 0
+              if m != ("_ "):
+                posicion += 1
+                continue
+              if m == ("_ "):
+                contador = 0
+                if contador == 0:
+                  for n in palabra:
+                    if n == ingresa_:
+                      lista[posicion] = ingresa_
+                      posicion += 1
+                    elif n!= ingresa_:
+                      posicion += 1
+                else:
+                  contador = 0
+                  continue
+            contador_ += 1
+            print("Te quedan " +str(num_intento-gastados)+ " intentos")
+            print(str(lista)+ "\n")
+
+```
 
 
 
 Ese es en el caso bonito, pero para casos contrarios, para aquellas ocasiones que no se acierte con la letra, no se reemplazara ningun caracater y se le informara a nuestros jugadores el limite de tiempo que queda y el número de intentos restantes.
 
-EJEMPLO
+## EJEMPLO
 
 ```
 
@@ -374,11 +407,29 @@ Ingresa una letra: e
 ...
 ```
 
+El codigo es similar a cuando se acierta una palabra, bajo la diferencia de que se le incorpora un else con las palabras destinadas a este caso:
+
+```
+ else:
+          upper = ingresa_.upper()
+          print(str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
+          contador = 0
+          gastados += 1
+          print("Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n")
+          print(str(lista)+ "\n")
+        print("AHORCADO: \n")
+```
+
+
 
 Y es ahi cuando traeremos a nuestro tan universal e icónico mamarracho que nos remite a como desde la infancia nos instauran simbolos para nuestra caida progresiva al fracaso. Dicho mamarracho es este:
 
 
 [![sqs.png](https://i.postimg.cc/cJvP138M/sqs.png)](https://postimg.cc/TyXtCp0p)
 
-Este mamarrachito esta conformado bajo una secuencia de caracteres ordenada para que conserve su iconica forma. Aun asi, esta progamado de tal manera que se dibujara en funcion de la cantidad de intentos que decidan nuestros jugadores
+Este mamarrachito esta conformado bajo una secuencia de caracteres ordenada para que conserve su iconica forma. Aun asi, esta progamado de tal manera que se dibujara en funcion de la cantidad de intentos que decidan nuestros jugadores. (Entre mas intentos se escoga, mas fragmentado sera nuestro mamarracho)
+
+# Juego final
+
+
 

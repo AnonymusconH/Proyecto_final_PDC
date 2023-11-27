@@ -334,8 +334,8 @@ Palabra buscada: AMA
 
 ['_ ', '_ ' , '_ ']
 
-Ingresa una letra: a
-    "A ES CORRECTO"
+INGRESA UNA LETRA: a
+    "a ES CORRECTO"
     "TE QUEDAN X INTENTOS
 
 
@@ -344,17 +344,41 @@ Ingresa una letra: a
 
   "TE QUEDAN X SEGUNDOS"
  
-Ingresa una letra: m
+INGRESA UNA LETRA: m
   "M ES CORRECTO"
 
 ['a ', 'm ', 'a ']
 
 "HA FINALIZADO EL JUEGO"
 
+```
 
+
+
+
+Ese es en el caso bonito, pero para casos contrarios, para aquellas ocasiones que no se acierte con la letra, no se reemplazara ningun caracater y se le informara a nuestros jugadores el limite de tiempo que queda y el número de intentos restantes.
+
+EJEMPLO
 
 ```
+
+Palabra buscada: CAMA
+
+
+['_ ', '_ ' , '_ ' , '_ ']
+
+Ingresa una letra: e 
+    "e ES CORRECTO"
+    "HAS GASTADO X INTENTOS, TE QUEDAN X"
+
+...
+```
+
+
+Y es ahi cuando traeremos a nuestro tan universal e icónico mamarracho que nos remite a como desde la infancia nos instauran simbolos para nuestra caida progresiva al fracaso. Dicho mamarracho es este:
+
+
 [![sqs.png](https://i.postimg.cc/cJvP138M/sqs.png)](https://postimg.cc/TyXtCp0p)
 
-Este sera nuestro 
+Este mamarrachito esta conformado bajo una secuencia de caracteres ordenada para que conserve su iconica forma. Aun asi, esta progamado de tal manera que se dibujara en funcion de la cantidad de intentos que decidan nuestros jugadores
 

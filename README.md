@@ -208,27 +208,27 @@ La función nivel, nos permite dar al usuario la libertad de elegir el nivel con
 
 La función intentos, cumple exactamente la misma función que la anterior, pero en vez de elegir nivel, esta elegira el número de intentos que tiene el usuario
 ```
-def nivel():
+def nivel(): # Función nivel
   print("HOLA BIENVENIDO A AHORCADO CON ANONIMUS CON H, SOMOS UN DUO DE PRIMIPAROS EL CUAL CREO ESTE JUEGO, COPUESTO DE 4 NIVELES, 3 BONOS DE IDIOMAS, Y \nLA CAPACIDAD DE ELEGIR EL NÚMERO DE INTENTOS, PROBAREMOS SI ERES UN PRO O UN SIMPLE PRIMIPARO QUE AUN NO CONOCE DEL MUNDO DE PYTHON \n")
   print("Estos son los niveles: \nNivel 1 = Primeros pasos PUNTOS : 3 \nNivel 2 = Primiparo PUNTOS: 5 \nNivel 3 = Maestro PUNTOS: 10  \nBonus 1 = Ingles PUNTOS: 5 \nBonus 2 = Frances PUNTOS: 8 \nBonus 3 = Aleman PUNTOS: 10 \n")
   bandera = True
   while bandera == True:
-    nivel_Palabras = int(input("Escoge el nivel de las palabras que quieras (solo pon el número, 1 FACIL, 2 MEDIO, 3 DIFICL, si es bonus 1 = 4, bonus 2 = 5, bonus 3 = 6): "))
+    nivel_Palabras = int(input("Escoge el nivel de las palabras que quieras (solo pon el número, 1 FACIL, 2 MEDIO, 3 DIFICL, si es bonus 1 = 4, bonus 2 = 5, bonus 3 = 6): ")) # Ingrese nivel
     if nivel_Palabras in range(1,7):
       break
     else:
-      print("Eso no te lo puede dar, ingresa entre 1 y 6")
+      print("Eso no te lo puede dar, ingresa entre 1 y 6") # En caso de que no ingrese lo que desee
   return nivel_Palabras
 
 def intentos():
   bandera = True
   while bandera == True:
     print("SIN CONTAR LOS EXTRA \n1 INTENTO: 1 PUNTO \n2 INTENTOS: 2 PUNTOS \n3 INTENTOS: 3 PUNTOS \n4 INTENTOS: 4 PUNTOS \n5 INTENTOS: 6 PUNTOS \n6 INTENTOS: 8 PUNTOS \n7 INTENTOS: 10 PUNTOS")
-    num_intentos = int(input("Escoge el número de intentos,min 1, max 7 (TIENES 3 INTENTOS EXTRA DE BASE,): "))
+    num_intentos = int(input("Escoge el número de intentos,min 1, max 7 (TIENES 3 INTENTOS EXTRA DE BASE,): ")) # Ingreso de Intentos
     if num_intentos in range(1,8):
       break
     else:
-      print("Eso no te lo puedo dar, ingresa entre 1 y 7")
+      print("Eso no te lo puedo dar, ingresa entre 1 y 7") # En caso de que no ingrese lo que desee
       continue
   num_intentos = num_intentos + 3
   print("Tu número de intentos sera: " +str(num_intentos)+ "\n")
@@ -263,7 +263,7 @@ Tambien los nivelitos tendran punticos, pilas ahi
 En esta Función podemos ver que dependiendo del nivel y del número de intentos que eligio el usuario esta retornara un número de puntos determinado. 
 
 ```
-  def puntos(): 
+  def puntos():  # Da los puntos
     if nivel_ == 1:
       punto_niv = 3
     elif nivel_ == 2:
@@ -292,7 +292,7 @@ En esta Función podemos ver que dependiendo del nivel y del número de intentos
       punto_int = 2
     elif num_intento == 10:
       punto_int = 1
-    total = punto_niv + punto_int
+    total = punto_niv + punto_int # Suma los puntos de nivel + intentos
     return total
 ```
 ## Listado de palabras a jugar
@@ -307,8 +307,8 @@ Esta función dependiendo del nivel que ingreso el usuario, tomara una lista dad
 ### Nivel 1: Vamos con primeros pasos
 
 ```
-def palabra():
-  if nivel_ == 1:
+def palabra(): # Lista
+  if nivel_ == 1: # Nivel 1
     print("Vamos con primeros pasos \n")
     lista = [
     "sol", "mar", "luz", "paz", "amor", "rey", "dia", "pan", "flor", "rio", "ojo", "pie", "voz", "hiel", "ley", "te", "rama" ,
@@ -343,7 +343,7 @@ def palabra():
 ### Nivel 2: Vamos con primiparo:
 
 ```
- if nivel_ == 2:
+ if nivel_ == 2: # Nivel 2
     print("Vamos con Primiparo \n")
     lista = [
       "abrigo", "balero", "camino", "Detalle", "esfera", "fuerza", "gorila", "humano", "insecto", "jardin", "lapiz", "madera", "narco", "opalo",
@@ -381,7 +381,7 @@ def palabra():
 ### Nivel 3: Vamos con maestro:
 
 ```
-if nivel_ == 3:
+if nivel_ == 3: # Nivel 3
     print("Vamos con maestro \n")
     lista = [
   "abecedario", "biblioteca", "calefaccion", "democracia", "electricidad", "filosofia", "gastronomia", "hidratacion", "iluminacion",
@@ -428,7 +428,7 @@ if nivel_ == 3:
 ### Nivel 4: Let´s do IT:
 
 ```
- if nivel_ == 4:
+ if nivel_ == 4: # Nivel 4
     print("Let's do IT \n")
     lista = [
 "cat", "dog", "bee", "run", "hat", "red", "sun", "box", "joy", "sky", "key", "car", "egg", "ice", "owl", "pen", "zip", "yoy", "fog", "wax",
@@ -445,7 +445,7 @@ if nivel_ == 3:
 ### Nivel 5: Quelle élégance de France:
 
 ```
- if nivel_ == 5:
+ if nivel_ == 5: # Nivel 5
     print("Quelle élégance de France \n")
     lista = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche", "automne", "hiver", "printemps", "pronunciaton","mois", "janvier", "mars", "avril", "mai", "juin", "juillet", "septembre", "octobre", "novembre", "decembre", "coleurs", "noir", "violet", "blanc", "rouge", "rose", "vert", "bleu", "orange", "marron", "gris", "beige", "turquoise", "famille", "soeur", "fils", "fille", "oncle", "tante", "cousine", "cousin", "enfants", "neveu","verbes", "avoir", "pronominaux", "aller", "manger", "courir", "danser", "chanter", "voler", "vouloir", "pouvoir", "garder", "jouer", "nager", "contruire", "penser", "ajouter", "sortir", "entrer", "monter", "descendre", "partir", "retourner", "rentrer", "rester", "tomber", "venir", "arriver", "mourir","permettre", "permis", "mettre", "mis", "dormir", "mentir", "sentir", "exprimer", "emotions", "hereuse", "triste", "aimer", "destester", "partager","rage" "servir", "sourire", "traduire", "conduire", "produire", "attendre", "battre", "animaux", "chien", "chat", "cheval", "souris", "poisson", "lion"]
     elemento_aleatorio = random.choice(lista)
@@ -457,7 +457,7 @@ if nivel_ == 3:
 ### Nivel 6: Das ist Liebe Essen von Scheiße:
 
 ```
-  if nivel_ == 6:
+  if nivel_ == 6: # Nivel 6
     print("Das ist Liebe zum Essen von Scheiße \n")
     lista = [
 "haus", "baum", "auto", "weg", "zug", "hund", "katze", "jahr", "tag", "zeit", "mond", "sonne", "meer", "stadt", "berg", "buch", "boot",
@@ -565,8 +565,8 @@ Este mamarrachito esta conformado bajo una secuencia de caracteres ordenada para
 La función de la cual sacamos los muñequitos es la siguiente. Esta permite guardar en una lista, el diccionario con cada muñequito, que estan ordenados secuencialmente para encajarlos con el número de intentos gastados, ademas de eso dependiendo del número de intentos que ingreso el usuario, se tiene configurado que lista sera retornada, para que tenga coherencia.
 
 ```
-  def img_ahoracado():
-    if num_intento == 3:
+  def img_ahoracado(): # AHORCADO
+    if num_intento == 3: # CUANDO INGRESA 0
       ahorcado_ = [
           {
               '0': '    +---+',
@@ -601,50 +601,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '5': '=========',
               }
                 ]
-    elif num_intento == 4:
-      ahorcado_ = [
-          {
-              '0': '    +---+',
-              '1': '        |',
-              '2': '        |',
-              '3': '        |',
-              '4': '        |',
-              '5': '=========',
-          },
-          {
-              '0': '    +---+',
-              '1': '        |',
-              '2': '        |',
-              '3': '        |',
-              '4': '        |',
-              '5': '=========',
-          },
-          {
-              '0': '    +---+',
-              '1': '        |',
-              '2': '        |',
-              '3': '        |',
-              '4': '        |',
-              '5': '=========',
-          },
-          {
-              '0': '    +---+',
-              '1': '        |',
-              '2': '        |',
-              '3': '        |',
-              '4': '        |',
-              '5': '=========',
-          },
-          {
-              '0': '    +---+',
-              '1': '    |   |',
-              '2': '    O   |',
-              '3': '   /|\  |',
-              '4': '   / \  |',
-              '5': '=========',
-              }
-                ]
-    elif num_intento == 5:
+    elif num_intento == 4: # CUANDO INGRESA 1
       ahorcado_ = [
           {
               '0': '    +---+',
@@ -683,6 +640,49 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '1': '    |   |',
               '2': '    O   |',
               '3': '   /|\  |',
+              '4': '   / \  |',
+              '5': '=========',
+              }
+                ]
+    elif num_intento == 5:# CUANDO INGRESA 2
+      ahorcado_ = [
+          {
+              '0': '    +---+',
+              '1': '        |',
+              '2': '        |',
+              '3': '        |',
+              '4': '        |',
+              '5': '=========',
+          },
+          {
+              '0': '    +---+',
+              '1': '        |',
+              '2': '        |',
+              '3': '        |',
+              '4': '        |',
+              '5': '=========',
+          },
+          {
+              '0': '    +---+',
+              '1': '        |',
+              '2': '        |',
+              '3': '        |',
+              '4': '        |',
+              '5': '=========',
+          },
+          {
+              '0': '    +---+',
+              '1': '        |',
+              '2': '        |',
+              '3': '        |',
+              '4': '        |',
+              '5': '=========',
+          },
+          {
+              '0': '    +---+',
+              '1': '    |   |',
+              '2': '    O   |',
+              '3': '   /|\  |',
               '4': '        |',
               '5': '=========',
           },
@@ -695,7 +695,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '5': '=========',
               }
                 ]
-    elif num_intento == 6:
+    elif num_intento == 6: # CUANDO INGRESA 3
       ahorcado_ = [
           {
               '0': '    +---+',
@@ -754,7 +754,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '5': '=========',
           }
       ]
-    elif num_intento == 7:
+    elif num_intento == 7: # CUANDO INGRESA 4
       ahorcado_ = [
           {
               '0': '    +---+',
@@ -821,7 +821,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '5': '=========',
               }
       ]
-    elif num_intento == 8:
+    elif num_intento == 8: # CUANDO INGRESA 5
       ahorcado_ = [
         {
             '0': '    +---+',
@@ -896,7 +896,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
             '5': '=========',
         }
       ]
-    elif num_intento == 9:
+    elif num_intento == 9: # CUANDO INGRESA 6
       ahorcado_ = [
           {
               '0': '    +---+',
@@ -979,7 +979,7 @@ La función de la cual sacamos los muñequitos es la siguiente. Esta permite gua
               '5': '=========',
           }
       ]
-    elif num_intento == 10:
+    elif num_intento == 10: # CUANDO INGRESA 7
       ahorcado_ = [
           {
               '0': '    +---+',

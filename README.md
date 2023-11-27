@@ -411,7 +411,7 @@ Palabra buscada: CAMA
 ['_ ', '_ ' , '_ ' , '_ ']
 
 Ingresa una letra: e 
-    "e ES CORRECTO"
+    "e ES INCORRECTO"
     "HAS GASTADO X INTENTOS, TE QUEDAN X"
 
 ...

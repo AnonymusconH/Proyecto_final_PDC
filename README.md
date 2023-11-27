@@ -110,6 +110,15 @@ Todos los jugadores contaran con una cantidad base de intentos de solamente 3. P
 ### 6 INTENTOS EXTRA: 2 PUNTOS
 ### 7 INTENTOS EXTRA: 1 PUNTO
 
+Tambien los nivelitos tendran punticos, pilas ahi
+
+## Nivel 1: 3 puntos
+## Nivel 2: 5 puntos
+## Nivel 3: 10 puntos
+## Nivel 4: 5 puntos
+## Nivel 5: 8 puntos
+## Nivel 6: 10 puntos
+
 
 ## Listado de palabras a jugar
 

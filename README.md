@@ -21,6 +21,7 @@ Para la realización de este juego lo compusimos bajo estos factores indispensab
 - Limite de tiempo
 - Imagen de muñequito siendo ahorcado
 - Juego final
+- ¿Como jugarlo e instalarlo?
 
 ## Importe de librerias
 
@@ -430,6 +431,75 @@ Y es ahi cuando traeremos a nuestro tan universal e icónico mamarracho que nos 
 Este mamarrachito esta conformado bajo una secuencia de caracteres ordenada para que conserve su iconica forma. Aun asi, esta progamado de tal manera que se dibujara en funcion de la cantidad de intentos que decidan nuestros jugadores. (Entre mas intentos se escoga, mas fragmentado sera nuestro mamarracho)
 
 # Juego final
+
+
+
+```
+def juego():
+    lista = []
+    gastados = 0
+    for l in palabra:
+      lista.append("_ ")
+    print("ESTA SERA LA PALABRA A ADIVINAR, TIENES 90 SEGUNDOS A PARTIR DE YA: ")
+    print(str(lista)+ "\n")
+    inicio_tiempo = time.time()
+    tiempo_transcurrido = 0
+    tiempo_max = 90
+    while gastados < num_intento and tiempo_transcurrido < tiempo_max:
+      if ''.join(lista) == palabra:
+        print("LO LOGRASTE " +str(palabra.upper())+ "\n")
+        return True
+        break
+      ingresa_ = str(input("Ingresa una letra: "))
+      ingresa_ = ingresa_.lower()
+      if len(ingresa_) == 1:
+        if ingresa_ in palabra:
+          upper = ingresa_.upper()
+          print(str(upper)+ " ES CORRECTO")
+          contador_ = 0
+          if contador_ == 0:
+            for m in lista:
+              posicion = 0
+              if m != ("_ "):
+                posicion += 1
+                continue
+              if m == ("_ "):
+                contador = 0
+                if contador == 0:
+                  for n in palabra:
+                    if n == ingresa_:
+                      lista[posicion] = ingresa_
+                      posicion += 1
+                    elif n!= ingresa_:
+                      posicion += 1
+                else:
+                  contador = 0
+                  continue
+            contador_ += 1
+            print("Te quedan " +str(num_intento-gastados)+ " intentos")
+            print(str(lista)+ "\n")
+          else:
+            posicion = 0
+            continue
+        else:
+          upper = ingresa_.upper()
+          print(str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
+          contador = 0
+          gastados += 1
+          print("Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n")
+          print(str(lista)+ "\n")
+        print("AHORCADO: \n")
+
+```
+
+# ¿Como jugarlo e instalarlo?
+
+En este siguiente link encontraras un Colab que te remitira a todo el codigo de nuestro juego. Puedes ejecutarlo directamente ahi o importarlo a cualquier progama ejecutor de código python.
+
+link: https://colab.research.google.com/drive/14S3F1pFUr_7IOK-RZZBtKdRylzwDJ-hp#scrollTo=2nooK04EpEco
+
+
+
 
 
 

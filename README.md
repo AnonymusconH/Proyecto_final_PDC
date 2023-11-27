@@ -16,6 +16,7 @@ Para la realización de este juego lo compusimos bajo estos factores indispensab
 
 - Importe de librerias
 - Instrucciones y niveles de juego
+- Puntuación
 - Listado de palabras a jugar
 - Imagen de muñequito siendo ahorcado
 - Limite de tiempo
@@ -35,7 +36,7 @@ import time
 
 ## Instrucciones y nivel de juego
 
-El juego es como el de toda la vida: Hay una palabra oculta del cual tiene que adivinarse mediante el acierto de letras que van redescubriendo dicha palabra, de lo contrario bajo una cantidad (que el mismo usuarios elegirá) de intentos fallidos, el juego acabara.
+El juego es como el de toda la vida: Hay una palabra oculta del cual tiene que adivinarse mediante el acierto de letras que van redescubriendo dicha palabra, de lo contrario bajo una cantidad minima de 3 (y que el mismo usuario puede aumentar si desea)  de intentos fallidos, el juego acabara.
 
 Hemos destinado 6 niveles de dificultad elegidos a gusto del jugador. Su dificultad radicara en la cantidad de letras de la que este compuesta dicha palabra y/ su idioma en el que este predispuesta. 
 
@@ -92,6 +93,22 @@ def intentos():
   return num_intentos
 
 ```
+
+## Puntuaciones
+
+Bien sea para el nivel de un jugador, o 2 jugadores, el elixir y quien se llevara la copa Piston es aquel que logre la increible hazaña de encontrar la palabra indicada en el menor numero de intentos posible.
+
+Todos los jugadores contaran con una cantidad base de intentos de solamente 3. Previo a la partida se le dara la opción a que el jugador pueda aumentar el número de intentos, pero eso lo volveria mas noob y por ende la cantidad de puntos disminuye paulatinamente. La pertenencia de puntos en función de la cantidad de intentos adicionales seria asi:
+
+## INTENTOS BASE: 3 ----> 10 PUNTOS
+## 1 INTENTO EXTRA: 8 PUNTOS
+## 2 INTENTOS EXTRA: 6 PUNTOS
+## 3 INTENTOS EXTRA: 5 PUNTOS
+## 4 INTENTOS EXTRA: 4 PUNTOS
+## 5 INTENTOS EXTRA: 3 PUNTOS
+## 6 INTENTOS EXTRA: 2 PUNTOS
+## 7 INTENTOS EXTRA: 1 PUNTO
+
 
 ## Listado de palabras a jugar
 
@@ -272,6 +289,11 @@ if nivel_ == 3:
     return(elemento_aleatorio)
 
 ```
+
+
+# Límite de tiempo 
+
+
 
 
 

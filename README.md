@@ -1102,42 +1102,50 @@ Dado caso en que nuestro jugador agote su tiempo, finalizara nuestra partida con
 
 # FUNCIÓN DEL JUEGO
 
+Esta función es el juego como tal, en primer lugar crea una lista vacia y la variable gastados = 0, como vimos anteriormente creamos la lista de la misma longitud de la palabra con "_ ", esto se imprimira para que el usuario entienda que desde ahi inicia el juego.
+
+Inicializamos la variable tiempo para empezar a contar los 90 segundos.
+
+Mientras la variable gastados sea menor al numero de intentos y el tiempo sea menor a 90 segundos. Primero comprobara si la lista unida, es igual a la palabra, en caso de que si se dara por ganada la partida, en caso de que no se le pedira al usuario que ingrese una letra (si ingresa más de una comprobara si es igual directamente a la palabra, si no aumentara en uno gastados y volvera a  ingresar al ciclo), comprobara si esta letra esta en la palabra, sino sumara uno en gastados, actualizara el tiempo que le queda y volvera a iniciar el ciclo. En caso tal de que si este, por medio de ciclos for se buscara la posicion de la palabra y se remplazara en la misma posición pero en la lista "_ ", por la letra.
+
+Hay algo especial y es que si la lista ya tiene letras guardadas, establecemos un codigo para que estas no sean manipuladas cuando se ingresen mas palabras"
+
+Si se le acaban los intentos o el tiempo, se dara por perdido el juego y se mostrara cual es la palabra correcta.
 
 ```
-def juego():
-    lista = []
-    gastados = 0
+  def juego():
+    lista = [] # lista
+    gastados = 0 # variable
     for l in palabra:
-      lista.append("_ ")
+      lista.append("_ ") # Crear lista
     print("ESTA SERA LA PALABRA A ADIVINAR, TIENES 90 SEGUNDOS A PARTIR DE YA: ")
-    print(str(lista)+ "\n")
-    inicio_tiempo = time.time()
+    print(str(lista)+ "\n") # Imprime la lista
+    inicio_tiempo = time.time() # Inicia el tiempo
     tiempo_transcurrido = 0
     tiempo_max = 90
-    while gastados < num_intento and tiempo_transcurrido < tiempo_max:
-      if ''.join(lista) == palabra:
+    while gastados < num_intento and tiempo_transcurrido < tiempo_max: # ciclo while para intentos y tiempo
+      if ''.join(lista) == palabra: # comprueba si la lista unida es igual a la palabra
         print("LO LOGRASTE " +str(palabra.upper())+ "\n")
         return True
-        break
-      ingresa_ = str(input("Ingresa una letra: "))
+      ingresa_ = str(input("Ingresa una letra: ")) # Ingresa una letra
       ingresa_ = ingresa_.lower()
-      if len(ingresa_) == 1:
-        if ingresa_ in palabra:
+      if len(ingresa_) == 1: # En caso de que sea solo una
+        if ingresa_ in palabra: # Comprueba de que este en palabra
           upper = ingresa_.upper()
           print(str(upper)+ " ES CORRECTO")
           contador_ = 0
           if contador_ == 0:
             for m in lista:
               posicion = 0
-              if m != ("_ "):
+              if m != ("_ "): # Si es diferente a ese valor lo omitira
                 posicion += 1
                 continue
-              if m == ("_ "):
+              if m == ("_ "): # Buscara la palabra
                 contador = 0
                 if contador == 0:
                   for n in palabra:
                     if n == ingresa_:
-                      lista[posicion] = ingresa_
+                      lista[posicion] = ingresa_ # Reemplaza el valor en la posición correcta
                       posicion += 1
                     elif n!= ingresa_:
                       posicion += 1
@@ -1145,7 +1153,7 @@ def juego():
                   contador = 0
                   continue
             contador_ += 1
-            print("Te quedan " +str(num_intento-gastados)+ " intentos")
+            print("Te quedan " +str(num_intento-gastados)+ " intentos") # muestra cuantos intentos quedan
             print(str(lista)+ "\n")
           else:
             posicion = 0
@@ -1155,11 +1163,37 @@ def juego():
           print(str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
           contador = 0
           gastados += 1
-          print("Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n")
+          print("Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n") # En caso de que este mal. aumenta en uno gastadose imprime cuanntos intentos le quedan
           print(str(lista)+ "\n")
         print("AHORCADO: \n")
+        for u in range(len(ahorcado)):
+          if u == gastados:
+            for v, w in ahorcado[u].items(): # Funcion para imprimir el ahorcado
+              print(w)
+        print("\n")
+        tiempo_transcurrido = time.time() - inicio_tiempo
+        print("Te quedan:" +str(tiempo_max - tiempo_transcurrido//1)+ " segundos \n") # Tiempo que le queda al usuario
+      elif len(ingresa_) > 1: # Si ingresa más de una palabra
+        if ingresa_ == palabra:
+          print("LO LOGRASTE ADIVINASTE " +str(palabra)+ "\n") # Gana
+          return True
+        elif ingresa_ != palabra:
+          print(str(ingresa_)+ " ES INCORRECTO INTENTA NUEVAMENTE") 3 Equivocación
+          gastados += 1
+          for u in range(len(ahorcado)):
+            if u == gastados:
+                for v, w in ahorcado[u].items():
+                    print(w)
+          print("\n")
+          continue
+    if gastados == num_intento:
+      print("HAS PERDIDO, LA PALABRA ERA " +str(palabra.upper())+  " ,suerte para la proxima") # En caso de que se acabaran los intentos
+      return False
+    print("SE HA TERMINADO EL TIEMPO, LA PALABRA ERA: " +str(palabra) +"\n") # En caso de que se terminara el tiempo
+    return False
 
 ```
+
 # DOS JUGADORES
 
 Para dos jugadores establecemos un ciclo for, en el que el modo de juego sera que cada jugador tendra 3 oportunidades para sumar puntos, eliginedo el nivel y el número de intentos que desee en cada uno de sus intentos,al final de esto el que sume mas puntos gana la partida.

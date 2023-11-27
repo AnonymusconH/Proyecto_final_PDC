@@ -97,7 +97,7 @@ def intentos():
 
 ## Puntuaciones
 
-Bien sea para el nivel de un jugador, o 2 jugadores, el elixir y quien se llevara la copa Piston es aquel que logre la increible hazaña de encontrar la palabra indicada en el menor numero de intentos posible.
+Bien sea para el nivel de un jugador, o 2 jugadores(porque si, tenemos multijugador OOMMGGGG), el elixir y quien se llevara la copa Piston es aquel que logre la increible hazaña de encontrar la palabra indicada en el menor nÚmero de intentos posible.
 
 Todos los jugadores contaran con una cantidad base de intentos de solamente 3. Previo a la partida se le dara la opción a que el jugador pueda aumentar el número de intentos, pero eso lo volveria mas noob y por ende la cantidad de puntos disminuye paulatinamente. La pertenencia de puntos en función de la cantidad de intentos adicionales seria asi:
 

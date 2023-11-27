@@ -293,7 +293,27 @@ if nivel_ == 3:
 
 # Límite de tiempo 
 
+Gracias a la libreria de "time", se nos da un estipulado de tiempo que podemos emplear como mecanismo de presión hacia nuestros jugadores >:)
 
+En este caso, les ofreceremos la modica suma de 90 SEGUNDOS por partida para encontrar la palabra adecuada (para que se vayan a los niveles GOD, minimo)
 
+Ahora, replicado bajo progamación usaremos este codigo para dar inicio a nuestro tiempo:
+
+```
+inicio_tiempo = time.time()
+    tiempo_transcurrido = 0
+    tiempo_max = 90
+
+```
+
+Conforme el paso del tiempo y seguramente con el numero fallido de intentos de nuestros jugadores, se les da la cantidad de segundo restantes por cada intento que usen mediante:
+
+```
+tiempo_transcurrido = time.time() - inicio_tiempo
+        print("Te quedan:" +str(tiempo_max - tiempo_transcurrido//1)+ " segundos \n")
+
+```
+
+Dado caso en que nuestro jugador agote su tiempo, finalizara nuestra partida con un break
 
 

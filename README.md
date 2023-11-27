@@ -23,6 +23,125 @@ Para la realización de este juego lo compusimos bajo estos factores indispensab
 - Juego final
 - ¿Como jugarlo e instalarlo?
 
+## DIAGRAMA DE FLUJO
+
+### PARA UN JUGADOR
+
+```mermaid
+flowchart TD
+    A[JUGADORES = 1] -->B(Ingresar nivel)
+    B --> C(1 facil: 3 PUNTOS, 2 medio: 5 PUNTOS, 3 dificil: 10 PUNTOS, 4 ingles: 5 PUNTOS, 5 frances: 8 PUNTOS, 6 aleman: 10 PUNTOS)
+    C --> D(Ingresar número de intentos adicionales, 3 de base)
+    D --> E(0: 10 puntos, 1: 8 puntos, 2: 6 puntos, 3: 5 puntos, 4: 4 puntos, 5: 3 puntos, 6: 2 puntos, 7: 1 punto)
+    E --> F(Intentos += 3)
+    F --> G{A DESDE 1 hasta 7}
+    G -->|V| H(SI A = Nivel)
+    H --> I(Importar lista de palabras)
+    I --> J(Palabra = elemento aleatorio lista)
+    J --> G
+    G -->|F| K(Retornar palabra)
+    K --> L{B DESDE 0 hasta 7}
+    L -->|V| M(SI B = Intentos)
+    M --> N(Importar ahorcado, diccionario con las imagenes de los ahorcados)
+    N --> L
+    L -->|F| Ñ(Retornar ahorcado)
+    Ñ --> O(Crea lista vacia)
+    O --> P{B EN LONGITUD DE PALABRA}
+    P -->|V| Q(Agregar a la lista _ )
+    Q --> P
+    P -->|F| R(Retornar lista)
+    R --> S(Imprimir lista)
+    S --> T(Crear variable gastados)
+    T --> U(Iniciar a contar el tiempo, max de 90 segundos)
+    U --> V{MIENTRAS TIEMPO GASTADO < 90 Y gastados < Intentos}
+    V -->|SI| AD{Elementos de la lista unidos = Palabra?}
+    AD -->|SI| AE(MUY BIEN ADIVINASTE LA PALABRA, Tienes X puntos)
+    AD --> |NO| W(Ingresa una letra)
+    W --> AB{Si se ingresa una letra}
+    AB --> AC{La letra esta en palabra?}
+    AC -->|SI| AI{For c en longitd Lista y d en longitud Palabra}
+    AI -->|V| AJ( si c = d)
+    AJ --> AK(Intercambiar valor de la lista por la letra ingresa)
+    AK --> AL(Imprimir lista)
+    AL --> AM(Gastado += 0, actualizar tiempo)
+    AM --> AN(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AN --> V
+    AC -->|NO| AF(Gastado += 1, actualizar tiempo)
+    AF --> AH(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AH --> V
+    W -->X{Si se ingresa mas de una letra}
+    X -->Y{Palabra = Palabra ingresada por el usuario?}
+    Y -->|SI| Z(MUY BIEN ADIVINASTE LA PALABRA, Tienes x puntos)
+    Y -->|NO| AA(Gastado += 1, actualizar tiempo)
+    AA --> AG(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AG --> V
+    V -->|NO| AÑ(TIEMPO AGOTADO, IMPRIMIR PALABRA, TIENES 0 PUNTOS)
+    V -->|NO| AO(INTENTOS AGOTADOS, IMPRIMIR PALABRA, TIENES 0 PUNTOS)    
+```
+### PARA DOS JUGADORES
+
+```mermaid
+flowchart TD
+    A[JUGADORES = 2] --> AP{I DESDE 0 hasta 5}
+    AP-->|V| AQ{i%2 + 1 = 1?}
+    AQ-->|SI| AR(JUGADOR 1)
+    AQ -->|NO| AS(JUGADOR 2)
+    AR --> B
+    AS-->B(Ingresar nivel)
+    B --> C(1 facil: 3 PUNTOS, 2 medio: 5 PUNTOS, 3 dificil: 10 PUNTOS, 4 ingles: 5 PUNTOS, 5 frances: 8 PUNTOS, 6 aleman: 10 PUNTOS)
+    C --> D(Ingresar número de intentos adicionales, 3 de base)
+    D --> E(0: 10 puntos, 1: 8 puntos, 2: 6 puntos, 3: 5 puntos, 4: 4 puntos, 5: 3 puntos, 6: 2 puntos, 7: 1 punto)
+    E --> F(Intentos += 3)
+    F --> G{A DESDE 1 hasta 7}
+    G -->|V| H(SI A = Nivel)
+    H --> I(Importar lista de palabras)
+    I --> J(Palabra = elemento aleatorio lista)
+    J --> G
+    G -->|F| K(Retornar palabra)
+    K --> L{B DESDE 0 hasta 7}
+    L -->|V| M(SI B = Intentos)
+    M --> N(Importar ahorcado, diccionario con las imagenes de los ahorcados)
+    N --> L
+    L -->|F| Ñ(Retornar ahorcado)
+    Ñ --> O(Crea lista vacia)
+    O --> P{B EN LONGITUD DE PALABRA}
+    P -->|V| Q(Agregar a la lista _ )
+    Q --> P
+    P -->|F| R(Retornar lista)
+    R --> S(Imprimir lista)
+    S --> T(Crear variable gastados)
+    T --> U(Iniciar a contar el tiempo, max de 90 segundos)
+    U --> V{MIENTRAS TIEMPO GASTADO < 90 Y gastados < Intentos}
+    V -->|SI| AD{Elementos de la lista unidos = Palabra?}
+    AD -->|SI| AE(MUY BIEN ADIVINASTE LA PALABRA, JUGADOR X ha sumado Y puntos)
+    AD --> |NO| W(Ingresa una letra)
+    W --> AB{Si se ingresa una letra}
+    AB --> AC{La letra esta en palabra?}
+    AC -->|SI| AI{For c en longitd Lista y d en longitud Palabra}
+    AI -->|V| AJ( si c = d)
+    AJ --> AK(Intercambiar valor de la lista por la letra ingresa)
+    AK --> AL(Imprimir lista)
+    AL --> AM(Gastado += 0, actualizar tiempo)
+    AM --> AN(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AN --> V
+    AC -->|NO| AF(Gastado += 1, actualizar tiempo)
+    AF --> AH(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AH --> V
+    W -->X{Si se ingresa mas de una letra}
+    X -->Y{Palabra = Palabra ingresada por el usuario?}
+    Y -->|SI| Z(MUY BIEN ADIVINASTE LA PALABRA)
+    Y -->|NO| AA(Gastado += 1, actualizar tiempo)
+    AA --> AG(Imprimir ahorcado, correspondiente a gastado e imprimir cuanto tiempo ha gastado)
+    AG --> V
+    V -->|NO| AÑ(TIEMPO AGOTADO, IMPRIMIR PALABRA, JUGADOR X ha sumado 0 puntos)
+    V -->|NO| AO(INTENTOS AGOTADOS, IMPRIMIR PALABRA, JUGADOR X ha sumado 0 puntos)
+    AP -->|F| AT{Puntos jugador > 1 Puntos Jugador 2}
+    AT -->|SI| AU(JUGADOR 1 HA GANADO)
+    AT -->|NO| AV{Puntos jugador < 1 Puntos Jugador 2}
+    AV -->|SI| AW(JUGADOR 2 HA GANADO)
+    AV -->|NO| AX(EMPATE) 
+```
+
 ## Importe de librerias
 
 Para el despliegue adecuado de nuestro codigo, importamos "random", "unicodedata" y "time", ya que estos nos sentaron las bases para un uso indicado del juego

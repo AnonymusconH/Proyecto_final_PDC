@@ -346,31 +346,31 @@ def palabra():
  if nivel_ == 2:
     print("Vamos con Primiparo \n")
     lista = [
-    "abrigo", "balero", "camino", "Detalle", "esfera", "fuerza", "gorila", "humano", "insecto", "jardin", "lapiz", "madera", "narco", "opalo",
-    "pajaro", "quimera", "raton", "sabana", "temprano", "utero", "valvula", "xilófono", "yogurt", "zocalo", "afinar", "broche", "calmado",
-    "dactil", "ebano", "fabula", "genero", "habito", "indice", "bodega", "lamina", "maquina", "nauseas", "pablo", "quorum", "rabano", "sadico",
-    "ulcera", "vandalo", "zangano", "aereo", "barato", "cometa", "dorado", "estilo", "fiesta", "gracia", "hierro", "invierno", "juego", "kawasaki",
-    "limon", "manzana", "numero", "olvido", "pezon", "queso", "reloj", "silla", "tiempo", "viento", "aceite", "broma", "cepillo", "dragon",
-    "espejo", "frasco", "guitarra", "helado", "iman", "jirafa", "kiosco", "lenteja", "mueble", "naranja", "oruga", "platano", "querido", "resorte"
-    "sarten", "tabaco", "util", "vuelo", "yerno", "zafiro", "amarillo", "bicicleta", "claridad", "drogado", "estampa", "fantasma", "gravilla",
-    "halcon", "impacto", "jornada", "karate", "llanura", "maraton", "niquel", "octubre""ratente", "quimico", "resumen", "sinfonia", "trabajo",
-    "uruguay", "ventana", "yerba", "zanahoria", "acelga", "bufalo", "cosecha", "decibel", "establo", "fabula", "habitante", "ilusion", "jengibre",
-    "karaoke", "labrador", "maniaco", "nublado", "obraje", "parpado", "quebrada", "relieve", "salmon", "tabique", "ursula", "viaducto", "waffles",
-    "alambre", "caracol", "delfin", "elefante", "frutal", "granero", "hormiga", "incienso", "jacinto", "kilovatio", "linterna", "monarca",
-    "naranjo", "acelote", "paraguas", "quirofano", "reserva", "semilla", "telefono", "sombra", "ventilador", "xilografia", "zarcillo", "algodon",
-    "brujula", "cenador", "dinosaurio", "escarola", "flamenco", "garganta", "hormigon", "indicador", "jalea", "laberinto", "marmol", "nectar",
-    "obelisco""palanca""quimono""retablo""sinfonia""taburete""ulcera""vertigo", "yoduro", "zafiro", "bambu", "caramelo", "dinamita", "estrella",
-    "fantasia", "girasol", "helice", "insignia", "jaleo", "kamikaze", "limonero", "maniquí", "nopal", "octagono", "pantera", "quijote",
-    "rompecabezas", "sandwich", "taller", "umbra", "vivienda", "yacimiento", "zambomba", "almohada", "bazar", "carpeta", "dromedario", "establo",
-    "felino", "gorrion", "helicoptero", "invernadero", "jeringa", "lider", "mariposa", "neumatico", "ovación", "pimienta", "rosaleda", "sardina",
-    "terreno", "unicornio", "vainilla", "zapatilla", "alquiler", "bombilla", "clavel", "durazno", "esfera", "furgoneta", "gaviota", "hidrante",
-    "infusión", "jazmin", "kilogramo", "linterna", "molino", "neblina""orquídea", "pizarra", "quimica", "rosquilla", "vanadio", "almendra",
-    "boceto", "cosecha", "espejismo", "fandango", "gladiolo", "halogeno", "insular", "jocoso", "lombriz", "mochila", "navegador", "ostra",
-    "picaporte", "quinoa", "rotonda", "surtidor", "uvula", "vagabundo", "yate", "zambullida", "acrobata", "claro", "bisturi", "cupula",
-    "diadema", "enigma", "frijol", "gondola", "harina", "insecto", "jicara", "laser", "mascara", "nomada", "oculto", "paramo", "quiste", "rabano",
-    "sotano", "túnel", "ultimo", "vastago", "zodiaco", "acrilico", "boveda", "cesped", "darsena", "ebano", "fosforo", "gargola", "heroe",
-    "icaro", "jubilo", "latigo", "mastil", "nectar", "optica", "petalo", "quorum", "regimen", "subdito", "tempano", "unico", "vertice", "xilofono",
-    "aereo""baculo""codigo"
+      "abrigo", "balero", "camino", "Detalle", "esfera", "fuerza", "gorila", "humano", "insecto", "jardin", "lapiz", "madera", "narco", "opalo",
+      "pajaro", "quimera", "raton", "sabana", "temprano", "utero", "valvula", "xilofono", "yogurt", "zocalo", "afinar", "broche", "calmado",
+      "dactil", "ebano", "fabula", "genero", "habito", "indice", "bodega", "lamina", "maquina", "nauseas", "pablo", "quorum", "rabano", "sadico",
+      "ulcera", "vandalo", "zangano", "aereo", "barato", "cometa", "dorado", "estilo", "fiesta", "gracia", "hierro", "invierno", "juego", "kawasaki",
+      "limon", "manzana", "numero", "olvido", "pezon", "queso", "reloj", "silla", "tiempo", "viento", "aceite", "broma", "cepillo", "dragon",
+      "espejo", "frasco", "guitarra", "helado", "iman", "jirafa", "kiosco", "lenteja", "mueble", "naranja", "oruga", "platano", "querido", "resorte"
+      "sarten", "tabaco", "util", "vuelo", "yerno", "zafiro", "amarillo", "bicicleta", "claridad", "drogado", "estampa", "fantasma", "gravilla",
+      "halcon", "impacto", "jornada", "karate", "llanura", "maraton", "niquel", "octubre""ratente", "quimico", "resumen", "sinfonia", "trabajo",
+      "uruguay", "ventana", "yerba", "zanahoria", "acelga", "bufalo", "cosecha", "decibel", "establo", "fabula", "habitante", "ilusion", "jengibre",
+      "karaoke", "labrador", "maniaco", "nublado", "obraje", "parpado", "quebrada", "relieve", "salmon", "tabique", "ursula", "viaducto", "waffles",
+      "alambre", "caracol", "delfin", "elefante", "frutal", "granero", "hormiga", "incienso", "jacinto", "kilovatio", "linterna", "monarca",
+      "naranjo", "acelote", "paraguas", "quirofano", "reserva", "semilla", "telefono", "sombra", "ventilador", "xilografia", "zarcillo", "algodon",
+      "brujula", "cenador", "dinosaurio", "escarola", "flamenco", "garganta", "hormigon", "indicador", "jalea", "laberinto", "marmol", "nectar",
+      "obelisco""palanca""quimono""retablo""sinfonia""taburete""ulcera""vertigo", "yoduro", "zafiro", "bambu", "caramelo", "dinamita", "estrella",
+      "fantasia", "girasol", "helice", "insignia", "jaleo", "kamikaze", "limonero", "maniquí", "nopal", "octagono", "pantera", "quijote",
+      "rompecabezas", "sandwich", "taller", "umbra", "vivienda", "yacimiento", "zambomba", "almohada", "bazar", "carpeta", "dromedario", "establo",
+      "felino", "gorrion", "helicoptero", "invernadero", "jeringa", "lider", "mariposa", "neumatico", "ovación", "pimienta", "rosaleda", "sardina",
+      "terreno", "unicornio", "vainilla", "zapatilla", "alquiler", "bombilla", "clavel", "durazno", "esfera", "furgoneta", "gaviota", "hidrante",
+      "infusión", "jazmin", "kilogramo", "linterna", "molino", "neblina""orquídea", "pizarra", "quimica", "rosquilla", "vanadio", "almendra",
+      "boceto", "cosecha", "espejismo", "fandango", "gladiolo", "halogeno", "insular", "jocoso", "lombriz", "mochila", "navegador", "ostra",
+      "picaporte", "quinoa", "rotonda", "surtidor", "uvula", "vagabundo", "yate", "zambullida", "acrobata", "claro", "bisturi", "cupula",
+      "diadema", "enigma", "frijol", "gondola", "harina", "insecto", "jicara", "laser", "mascara", "nomada", "oculto", "paramo", "quiste", "rabano",
+      "sotano", "túnel", "ultimo", "vastago", "zodiaco", "acrilico", "boveda", "cesped", "darsena", "ebano", "fosforo", "gargola", "heroe",
+      "icaro", "jubilo", "latigo", "mastil", "nectar", "optica", "petalo", "quorum", "regimen", "subdito", "tempano", "unico", "vertice", "xilofono",
+      "aereo""baculo""codigo"
     ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
@@ -384,40 +384,40 @@ def palabra():
 if nivel_ == 3:
     print("Vamos con maestro \n")
     lista = [
-"abecedario", "biblioteca", "calefaccion", "democracia", "electricidad", "filosofia", "gastronomia", "hidratacion", "iluminacion",
-"jardineria", "kilometraje", "libreria", "matematicas", "neumatico", "orquesta", "paralelogramo", "querubines", "radiografia", "metalurgia",
-"telescopio", "ultrasonido", "vagabunderia", "ingenieria", "camioneta", "filosofia", "aprobacion", "arquitectura", "burocracia",
-"contaminacion", "desarrollo", "espectaculo", "fraternidad", "geografia", "horticultura", "imaginacion", "justificacion", "kinesiologia",
-"luminiscencia", "meteorologia", "navegacion", "oportunidad", "psicología", "quimica", "revolucion", "reconocimiento", "traduccion",
-"universitario", "vulcanizacion", "antioquia", "zoologico", "aeronautica", "biologia", "cartografia", "dermatologia", "encefalograma",
-"filantropia", "gerontologia", "hidrografia", "iconografia", "jeringuilla", "levitacion", "monocromatico", "nefrologia", "oceanografia",
-"paleontologia", "quiropractica", "retroalimentacion", "sismología", "telepatia", "ultravioleta", "verborrea", "entropia", "coqueteria",
-"antagonismo", "balistica", "caligrafoa", "diagnóstico", "simbiosis", "filigrana", "glaciacion", "hemisferio", "ilusionismo", "jovialidad",
-"kinesioterapia", "locomoción", "magnetismo", "neurologia", "ornitología", "psicopatologia", "queratina", "reciclaje", "simbolismo",
-"teocracia", "unificacion", "ventilacion", "histeria", "xenofobo", "zoologia", "arqueologia", "bioquimica", "cinematografia",
-"deshidratación", "epistemología", "fisioterapia", "geriatria", "hemoglobina", "idealización", "logaritmo", "microscopio", "neurocirugia",
-"oftalmologia", "paleografia", "quiromancia", "radiotelescopio", "serpiente", "taxidermia", "cantautor", "escondidas", "xenofobia",
-"zambullirse", "autobiografia", "bacteriologia", "contabilidad", "desinfeccion", "electromagnetismo", "fotografia", "gramatica", "hipotenusa",
-"impresionismo", "jurisprudencia", "kinestesia", "litografia", "macadamia", "nostalgia", "oleografia", "fotografia", "quiroptero",
-"restauracion""surrealismo""television""aristocracia""beneficencia""comunicacion""deforestacion""electrodomestico""fotocopiadora""gubernamental""hemeroteca""informatica""jurisdiccion"
-"kilovoltio", "libreria", "neurociencia", "oftalmologo", "paramedico", "ginecoplastia", "resucitacion", "quirurgico", "ultrasonografia",
-"discoteca", "reggaeton", "yerbatero", "zambullidor", "automatizacion", "bioingeniería", "cronometraje", "desoxirribonucleico", "etnografía"
-"fonoaudiologia", "horticultor", "embriaguez", "jardineria", "kinesiologia", "lexicografia", "meteorologia", "nefrologia", "otorrinolaringologia",
-"petrografia", "quiropractica", "radiotelefonia", "sismografo", "toxicologia", "microscopio", "videocamara", "xenofobo", "yuxtaposicion",
-"zoologico", "antropologia", "biomecánica", "computadora", "dermatologia", "espectrofotometria", "filantropia", "hemodinámica", "inmunologia",
-"kilogramo", "laringologia", "micologia", "neumonia", "oftalmologia", "paleontologia", "quimioterapia", "radiactividad", "taquicardia",
-"ultravioleta", "virologia", "depresion", "zancadilla", "arqueologia", "progamacion", "cardiologia", "depuradora", "electroencefalograma",
-"geriatria", "hemoglobina", "infograma", "jardinería", "ludopatia", "microprocesador", "neurotransmisor", "psicopedagogía", "quebradizo",
-"radioastronomía", "semiótica", "terapia", "ultraligero", "ventriloquia", "zapatilla", "astronomia", "bronquitis", "caleidoscopio",
-"deshidratador", "electroimán", "fisiología", "gerontología", "hemisferio", "indemnizacion", "jeringuilla", "kinesioterapia", "logistica",
-"monocromático", "neurocirugia", "osteopatia", "psiquiatria", "quimico", "reciclador", "filologia", "transeúnte", "verosimilitud",
-"xilofono", "yerbatero", "zambullida", "antioxidante", "catapulta", "diagnóstico", "electroshock", "fraccionamiento", "astronauta",
-"intermediario", "jerarquía", "kinesiterapia", "luminiscencia", "magnetoscopio", "neuroanatomía", "oftalmoscopio", "farmacología", "acuicultura",
-"barometro", "camuflaje", "descifrador", "empatia", "fertilizante", "glucosa", "hidroelectrica", "justiciero", "karaoke", "laboratorio",
-"microscopio", "neurocirujano", "oftalmoscopio", "paracaidismo", "queratina", "radiacion", "sarcofago", "ultravioleta", "ventrilocuo",
-"xenofobia", "zangoloteo", "binocular", "ciberespacio", "desinfectante", "entrenador", "filosofar", "geotermia", "hormigon", "inmunologia",
-"jardinero", "caleidoscopio", "luminiscencia", "monocromatico", "navegante", "operacion", "paleontologo", "quimioterapia", "radiotelescopio",
-"secuenciador", "termometro", "urbanizacion", "viscosidad", "terremoto"
+  "abecedario", "biblioteca", "calefaccion", "democracia", "electricidad", "filosofia", "gastronomia", "hidratacion", "iluminacion",
+  "jardineria", "kilometraje", "libreria", "matematicas", "neumatico", "orquesta", "paralelogramo", "querubines", "radiografia", "metalurgia",
+  "telescopio", "ultrasonido", "vagabunderia", "ingenieria", "camioneta", "filosofia", "aprobacion", "arquitectura", "burocracia",
+  "contaminacion", "desarrollo", "espectaculo", "fraternidad", "geografia", "horticultura", "imaginacion", "justificacion", "kinesiologia",
+  "luminiscencia", "meteorologia", "navegacion", "oportunidad", "psicologia", "quimica", "revolucion", "reconocimiento", "traduccion",
+  "universitario", "vulcanizacion", "antioquia", "zoologico", "aeronautica", "biologia", "cartografia", "dermatologia", "encefalograma",
+  "filantropia", "gerontologia", "hidrografia", "iconografia", "jeringuilla", "levitacion", "monocromatico", "nefrologia", "oceanografia",
+  "paleontologia", "quiropractica", "retroalimentacion", "sismología", "telepatia", "ultravioleta", "verborrea", "entropia", "coqueteria",
+  "antagonismo", "balistica", "caligrafoa", "diagnóstico", "simbiosis", "filigrana", "glaciacion", "hemisferio", "ilusionismo", "jovialidad",
+  "kinesioterapia", "locomoción", "magnetismo", "neurologia", "ornitología", "psicopatologia", "queratina", "reciclaje", "simbolismo",
+  "teocracia", "unificacion", "ventilacion", "histeria", "xenofobo", "zoologia", "arqueologia", "bioquimica", "cinematografia",
+  "deshidratacion", "epistemologia", "fisioterapia", "geriatria", "hemoglobina", "idealizacion", "logaritmo", "microscopio", "neurocirugia",
+  "oftalmologia", "paleografia", "quiromancia", "radiotelescopio", "serpiente", "taxidermia", "cantautor", "escondidas", "xenofobia",
+  "zambullirse", "autobiografia", "bacteriologia", "contabilidad", "desinfeccion", "electromagnetismo", "fotografia", "gramatica", "hipotenusa",
+  "impresionismo", "jurisprudencia", "kinestesia", "litografia", "macadamia", "nostalgia", "oleografia", "fotografia", "quiroptero",
+  "restauracion", "surrealismo", "television", "aristocracia", "beneficencia", "comunicacion", "deforestacion", "electrodomestico", "fotocopiadora", "gubernamental", "hemeroteca", "informatica", "jurisdiccion"
+  "kilovoltio", "libreria", "neurociencia", "oftalmologo", "paramedico", "ginecoplastia", "resucitacion", "quirurgico", "ultrasonografia",
+  "discoteca", "reggaeton", "yerbatero", "zambullidor", "automatizacion", "bioingeniería", "cronometraje", "desoxirribonucleico", "etnografía"
+  "fonoaudiologia", "horticultor", "embriaguez", "jardineria", "kinesiologia", "lexicografia", "meteorologia", "nefrologia", "otorrinolaringologia",
+  "petrografia", "quiropractica", "radiotelefonia", "sismografo", "toxicologia", "microscopio", "videocamara", "xenofobo", "yuxtaposicion",
+  "zoologico", "antropologia", "biomecánica", "computadora", "dermatologia", "espectrofotometria", "filantropia", "hemodinamica", "inmunologia",
+  "kilogramo", "laringologia", "micologia", "neumonia", "oftalmologia", "paleontologia", "quimioterapia", "radiactividad", "taquicardia",
+  "ultravioleta", "virologia", "depresion", "zancadilla", "arqueologia", "progamacion", "cardiologia", "depuradora", "electroencefalograma",
+  "geriatria", "hemoglobina", "infograma", "jardinería", "ludopatia", "microprocesador", "neurotransmisor", "psicopedagogía", "quebradizo",
+  "radioastronomía", "semiótica", "terapia", "ultraligero", "ventriloquia", "zapatilla", "astronomia", "bronquitis", "caleidoscopio",
+  "deshidratador", "electroimán", "fisiología", "gerontología", "hemisferio", "indemnizacion", "jeringuilla", "kinesioterapia", "logistica",
+  "monocromático", "neurocirugia", "osteopatia", "psiquiatria", "quimico", "reciclador", "filologia", "transeúnte", "verosimilitud",
+  "xilofono", "yerbatero", "zambullida", "antioxidante", "catapulta", "diagnóstico", "electroshock", "fraccionamiento", "astronauta",
+  "intermediario", "jerarquía", "kinesiterapia", "luminiscencia", "magnetoscopio", "neuroanatomía", "oftalmoscopio", "farmacología", "acuicultura",
+  "barometro", "camuflaje", "descifrador", "empatia", "fertilizante", "glucosa", "hidroelectrica", "justiciero", "karaoke", "laboratorio",
+  "microscopio", "neurocirujano", "oftalmoscopio", "paracaidismo", "queratina", "radiacion", "sarcofago", "ultravioleta", "ventrilocuo",
+  "xenofobia", "zangoloteo", "binocular", "ciberespacio", "desinfectante", "entrenador", "filosofar", "geotermia", "hormigon", "inmunologia",
+  "jardinero", "caleidoscopio", "luminiscencia", "monocromatico", "navegante", "operacion", "paleontologo", "quimioterapia", "radiotelescopio",
+  "secuenciador", "termometro", "urbanizacion", "viscosidad", "terremoto"
 ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
@@ -2132,8 +2132,8 @@ elif jugadores == 2:
       if nivel_ == 2:
         print("JUGADOR " +str(jugador_act)+ " Vamos con Primiparo \n")
         lista = [
-        "abrigo", "balero", "camino", "Detalle", "esfera", "fuerza", "gorila", "humano", "insecto", "jardin", "lapiz", "madera", "narco", "opalo",
-      "pajaro", "quimera", "raton", "sabana", "temprano", "utero", "valvula", "xilófono", "yogurt", "zocalo", "afinar", "broche", "calmado",
+      "abrigo", "balero", "camino", "Detalle", "esfera", "fuerza", "gorila", "humano", "insecto", "jardin", "lapiz", "madera", "narco", "opalo",
+      "pajaro", "quimera", "raton", "sabana", "temprano", "utero", "valvula", "xilofono", "yogurt", "zocalo", "afinar", "broche", "calmado",
       "dactil", "ebano", "fabula", "genero", "habito", "indice", "bodega", "lamina", "maquina", "nauseas", "pablo", "quorum", "rabano", "sadico",
       "ulcera", "vandalo", "zangano", "aereo", "barato", "cometa", "dorado", "estilo", "fiesta", "gracia", "hierro", "invierno", "juego", "kawasaki",
       "limon", "manzana", "numero", "olvido", "pezon", "queso", "reloj", "silla", "tiempo", "viento", "aceite", "broma", "cepillo", "dragon",
@@ -2163,42 +2163,42 @@ elif jugadores == 2:
         return(elemento_aleatorio)
       if nivel_ == 3:
         print("JUGADOR " +str(jugador_act)+ " Vamos con maestro \n")
-        lista = [
-    "abecedario", "biblioteca", "calefaccion", "democracia", "electricidad", "filosofia", "gastronomia", "hidratacion", "iluminacion",
-    "jardineria", "kilometraje", "libreria", "matematicas", "neumatico", "orquesta", "paralelogramo", "querubines", "radiografia", "metalurgia",
-    "telescopio", "ultrasonido", "vagabunderia", "ingenieria", "camioneta", "filosofia", "aprobacion", "arquitectura", "burocracia",
-    "contaminacion", "desarrollo", "espectaculo", "fraternidad", "geografia", "horticultura", "imaginacion", "justificacion", "kinesiologia",
-    "luminiscencia", "meteorologia", "navegacion", "oportunidad", "psicología", "quimica", "revolucion", "reconocimiento", "traduccion",
-    "universitario", "vulcanizacion", "antioquia", "zoologico", "aeronautica", "biologia", "cartografia", "dermatologia", "encefalograma",
-    "filantropia", "gerontologia", "hidrografia", "iconografia", "jeringuilla", "levitacion", "monocromatico", "nefrologia", "oceanografia",
-    "paleontologia", "quiropractica", "retroalimentacion", "sismología", "telepatia", "ultravioleta", "verborrea", "entropia", "coqueteria",
-    "antagonismo", "balistica", "caligrafoa", "diagnóstico", "simbiosis", "filigrana", "glaciacion", "hemisferio", "ilusionismo", "jovialidad",
-    "kinesioterapia", "locomoción", "magnetismo", "neurologia", "ornitología", "psicopatologia", "queratina", "reciclaje", "simbolismo",
-    "teocracia", "unificacion", "ventilacion", "histeria", "xenofobo", "zoologia", "arqueologia", "bioquimica", "cinematografia",
-    "deshidratación", "epistemología", "fisioterapia", "geriatria", "hemoglobina", "idealización", "logaritmo", "microscopio", "neurocirugia",
-    "oftalmologia", "paleografia", "quiromancia", "radiotelescopio", "serpiente", "taxidermia", "cantautor", "escondidas", "xenofobia",
-    "zambullirse", "autobiografia", "bacteriologia", "contabilidad", "desinfeccion", "electromagnetismo", "fotografia", "gramatica", "hipotenusa",
-    "impresionismo", "jurisprudencia", "kinestesia", "litografia", "macadamia", "nostalgia", "oleografia", "fotografia", "quiroptero",
-    "restauracion""surrealismo""television""aristocracia""beneficencia""comunicacion""deforestacion""electrodomestico""fotocopiadora""gubernamental""hemeroteca""informatica""jurisdiccion"
-    "kilovoltio", "libreria", "neurociencia", "oftalmologo", "paramedico", "ginecoplastia", "resucitacion", "quirurgico", "ultrasonografia",
-    "discoteca", "reggaeton", "yerbatero", "zambullidor", "automatizacion", "bioingeniería", "cronometraje", "desoxirribonucleico", "etnografía"
-    "fonoaudiologia", "horticultor", "embriaguez", "jardineria", "kinesiologia", "lexicografia", "meteorologia", "nefrologia", "otorrinolaringologia",
-    "petrografia", "quiropractica", "radiotelefonia", "sismografo", "toxicologia", "microscopio", "videocamara", "xenofobo", "yuxtaposicion",
-    "zoologico", "antropologia", "biomecánica", "computadora", "dermatologia", "espectrofotometria", "filantropia", "hemodinámica", "inmunologia",
-    "kilogramo", "laringologia", "micologia", "neumonia", "oftalmologia", "paleontologia", "quimioterapia", "radiactividad", "taquicardia",
-    "ultravioleta", "virologia", "depresion", "zancadilla", "arqueologia", "progamacion", "cardiologia", "depuradora", "electroencefalograma",
-    "geriatria", "hemoglobina", "infograma", "jardinería", "ludopatia", "microprocesador", "neurotransmisor", "psicopedagogía", "quebradizo",
-    "radioastronomía", "semiótica", "terapia", "ultraligero", "ventriloquia", "zapatilla", "astronomia", "bronquitis", "caleidoscopio",
-    "deshidratador", "electroimán", "fisiología", "gerontología", "hemisferio", "indemnizacion", "jeringuilla", "kinesioterapia", "logistica",
-    "monocromático", "neurocirugia", "osteopatia", "psiquiatria", "quimico", "reciclador", "filologia", "transeúnte", "verosimilitud",
-    "xilofono", "yerbatero", "zambullida", "antioxidante", "catapulta", "diagnóstico", "electroshock", "fraccionamiento", "astronauta",
-    "intermediario", "jerarquía", "kinesiterapia", "luminiscencia", "magnetoscopio", "neuroanatomía", "oftalmoscopio", "farmacología", "acuicultura",
-    "barometro", "camuflaje", "descifrador", "empatia", "fertilizante", "glucosa", "hidroelectrica", "justiciero", "karaoke", "laboratorio",
-    "microscopio", "neurocirujano", "oftalmoscopio", "paracaidismo", "queratina", "radiacion", "sarcofago", "ultravioleta", "ventrilocuo",
-    "xenofobia", "zangoloteo", "binocular", "ciberespacio", "desinfectante", "entrenador", "filosofar", "geotermia", "hormigon", "inmunologia",
-    "jardinero", "caleidoscopio", "luminiscencia", "monocromatico", "navegante", "operacion", "paleontologo", "quimioterapia", "radiotelescopio",
-    "secuenciador", "termometro", "urbanizacion", "viscosidad", "terremoto"
-    ]
+        lista =  [
+"abecedario", "biblioteca", "calefaccion", "democracia", "electricidad", "filosofia", "gastronomia", "hidratacion", "iluminacion",
+  "jardineria", "kilometraje", "libreria", "matematicas", "neumatico", "orquesta", "paralelogramo", "querubines", "radiografia", "metalurgia",
+  "telescopio", "ultrasonido", "vagabunderia", "ingenieria", "camioneta", "filosofia", "aprobacion", "arquitectura", "burocracia",
+  "contaminacion", "desarrollo", "espectaculo", "fraternidad", "geografia", "horticultura", "imaginacion", "justificacion", "kinesiologia",
+  "luminiscencia", "meteorologia", "navegacion", "oportunidad", "psicologia", "quimica", "revolucion", "reconocimiento", "traduccion",
+  "universitario", "vulcanizacion", "antioquia", "zoologico", "aeronautica", "biologia", "cartografia", "dermatologia", "encefalograma",
+  "filantropia", "gerontologia", "hidrografia", "iconografia", "jeringuilla", "levitacion", "monocromatico", "nefrologia", "oceanografia",
+  "paleontologia", "quiropractica", "retroalimentacion", "sismología", "telepatia", "ultravioleta", "verborrea", "entropia", "coqueteria",
+  "antagonismo", "balistica", "caligrafoa", "diagnóstico", "simbiosis", "filigrana", "glaciacion", "hemisferio", "ilusionismo", "jovialidad",
+  "kinesioterapia", "locomoción", "magnetismo", "neurologia", "ornitología", "psicopatologia", "queratina", "reciclaje", "simbolismo",
+  "teocracia", "unificacion", "ventilacion", "histeria", "xenofobo", "zoologia", "arqueologia", "bioquimica", "cinematografia",
+  "deshidratacion", "epistemologia", "fisioterapia", "geriatria", "hemoglobina", "idealizacion", "logaritmo", "microscopio", "neurocirugia",
+  "oftalmologia", "paleografia", "quiromancia", "radiotelescopio", "serpiente", "taxidermia", "cantautor", "escondidas", "xenofobia",
+  "zambullirse", "autobiografia", "bacteriologia", "contabilidad", "desinfeccion", "electromagnetismo", "fotografia", "gramatica", "hipotenusa",
+  "impresionismo", "jurisprudencia", "kinestesia", "litografia", "macadamia", "nostalgia", "oleografia", "fotografia", "quiroptero",
+  "restauracion", "surrealismo", "television", "aristocracia", "beneficencia", "comunicacion", "deforestacion", "electrodomestico", "fotocopiadora", "gubernamental", "hemeroteca", "informatica", "jurisdiccion"
+  "kilovoltio", "libreria", "neurociencia", "oftalmologo", "paramedico", "ginecoplastia", "resucitacion", "quirurgico", "ultrasonografia",
+  "discoteca", "reggaeton", "yerbatero", "zambullidor", "automatizacion", "bioingeniería", "cronometraje", "desoxirribonucleico", "etnografía"
+  "fonoaudiologia", "horticultor", "embriaguez", "jardineria", "kinesiologia", "lexicografia", "meteorologia", "nefrologia", "otorrinolaringologia",
+  "petrografia", "quiropractica", "radiotelefonia", "sismografo", "toxicologia", "microscopio", "videocamara", "xenofobo", "yuxtaposicion",
+  "zoologico", "antropologia", "biomecánica", "computadora", "dermatologia", "espectrofotometria", "filantropia", "hemodinamica", "inmunologia",
+  "kilogramo", "laringologia", "micologia", "neumonia", "oftalmologia", "paleontologia", "quimioterapia", "radiactividad", "taquicardia",
+  "ultravioleta", "virologia", "depresion", "zancadilla", "arqueologia", "progamacion", "cardiologia", "depuradora", "electroencefalograma",
+  "geriatria", "hemoglobina", "infograma", "jardinería", "ludopatia", "microprocesador", "neurotransmisor", "psicopedagogía", "quebradizo",
+  "radioastronomía", "semiótica", "terapia", "ultraligero", "ventriloquia", "zapatilla", "astronomia", "bronquitis", "caleidoscopio",
+  "deshidratador", "electroimán", "fisiología", "gerontología", "hemisferio", "indemnizacion", "jeringuilla", "kinesioterapia", "logistica",
+  "monocromático", "neurocirugia", "osteopatia", "psiquiatria", "quimico", "reciclador", "filologia", "transeúnte", "verosimilitud",
+  "xilofono", "yerbatero", "zambullida", "antioxidante", "catapulta", "diagnóstico", "electroshock", "fraccionamiento", "astronauta",
+  "intermediario", "jerarquía", "kinesiterapia", "luminiscencia", "magnetoscopio", "neuroanatomía", "oftalmoscopio", "farmacología", "acuicultura",
+  "barometro", "camuflaje", "descifrador", "empatia", "fertilizante", "glucosa", "hidroelectrica", "justiciero", "karaoke", "laboratorio",
+  "microscopio", "neurocirujano", "oftalmoscopio", "paracaidismo", "queratina", "radiacion", "sarcofago", "ultravioleta", "ventrilocuo",
+  "xenofobia", "zangoloteo", "binocular", "ciberespacio", "desinfectante", "entrenador", "filosofar", "geotermia", "hormigon", "inmunologia",
+  "jardinero", "caleidoscopio", "luminiscencia", "monocromatico", "navegante", "operacion", "paleontologo", "quimioterapia", "radiotelescopio",
+  "secuenciador", "termometro", "urbanizacion", "viscosidad", "terremoto"
+]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
         return(elemento_aleatorio)

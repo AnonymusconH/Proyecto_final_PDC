@@ -335,7 +335,7 @@ def palabra(): # Lista
     ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-    return(elemento_aleatorio)
+    return(elemento_aleatorio_)
 
 ```
 
@@ -374,7 +374,7 @@ def palabra(): # Lista
     ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-    return(elemento_aleatorio)
+    return(elemento_aleatorio_)
 
 ```
 
@@ -421,7 +421,7 @@ if nivel_ == 3: # Nivel 3
 ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-    return(elemento_aleatorio)
+    return(elemento_aleatorio_)
 
 ```
 
@@ -439,7 +439,9 @@ if nivel_ == 3: # Nivel 3
 "machinery", "nutrition", "operation", "neumatic", "question", "radiology", "spherical", "telescope", "umbrella", "vibration", "warehouse",
 "xenophobe", "zealously", "afternoon", "biography", "candidate", "education", "frequency", "generator", "marketing" , "nightfall",
 "overboard", "wallpaper", "satellite", "underwear", "blueberry", "homework", "morning", "elephant"
-
+     elemento_aleatorio = random.choice(lista)
+     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
+     return(elemento_aleatorio_)
 ```
 
 ### Nivel 5: Quelle élégance de France:
@@ -450,7 +452,7 @@ if nivel_ == 3: # Nivel 3
     lista = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche", "automne", "hiver", "printemps", "pronunciaton","mois", "janvier", "mars", "avril", "mai", "juin", "juillet", "septembre", "octobre", "novembre", "decembre", "coleurs", "noir", "violet", "blanc", "rouge", "rose", "vert", "bleu", "orange", "marron", "gris", "beige", "turquoise", "famille", "soeur", "fils", "fille", "oncle", "tante", "cousine", "cousin", "enfants", "neveu","verbes", "avoir", "pronominaux", "aller", "manger", "courir", "danser", "chanter", "voler", "vouloir", "pouvoir", "garder", "jouer", "nager", "contruire", "penser", "ajouter", "sortir", "entrer", "monter", "descendre", "partir", "retourner", "rentrer", "rester", "tomber", "venir", "arriver", "mourir","permettre", "permis", "mettre", "mis", "dormir", "mentir", "sentir", "exprimer", "emotions", "hereuse", "triste", "aimer", "destester", "partager","rage" "servir", "sourire", "traduire", "conduire", "produire", "attendre", "battre", "animaux", "chien", "chat", "cheval", "souris", "poisson", "lion"]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-    return(elemento_aleatorio)
+    return(elemento_aleatorio_)
 
 ```
 
@@ -472,7 +474,7 @@ if nivel_ == 3: # Nivel 3
 ]
     elemento_aleatorio = random.choice(lista)
     elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-    return(elemento_aleatorio)
+    return(elemento_aleatorio_)
 
 ```
 # Imágen muñequito siendo ahorcado 
@@ -1141,17 +1143,12 @@ Si se le acaban los intentos o el tiempo, se dara por perdido el juego y se most
                 posicion += 1
                 continue
               if m == ("_ "): # Buscara la palabra
-                contador = 0
-                if contador == 0:
                   for n in palabra:
                     if n == ingresa_:
                       lista[posicion] = ingresa_ # Reemplaza el valor en la posición correcta
                       posicion += 1
                     elif n!= ingresa_:
                       posicion += 1
-                else:
-                  contador = 0
-                  continue
             contador_ += 1
             print("Te quedan " +str(num_intento-gastados)+ " intentos") # muestra cuantos intentos quedan
             print(str(lista)+ "\n")
@@ -1161,7 +1158,6 @@ Si se le acaban los intentos o el tiempo, se dara por perdido el juego y se most
         else:
           upper = ingresa_.upper()
           print(str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
-          contador = 0
           gastados += 1
           print("Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n") # En caso de que este mal. aumenta en uno gastadose imprime cuanntos intentos le quedan
           print(str(lista)+ "\n")
@@ -1322,7 +1318,7 @@ if jugadores == 1:
       ]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
     if nivel_ == 2:
       print("Vamos con Primiparo \n")
       lista = [
@@ -1354,7 +1350,7 @@ if jugadores == 1:
       ]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
     if nivel_ == 3:
       print("Vamos con maestro \n")
       lista = [
@@ -1395,7 +1391,7 @@ if jugadores == 1:
   ]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
     if nivel_ == 4:
       print("Let's do IT \n")
       lista = [
@@ -1410,13 +1406,13 @@ if jugadores == 1:
   ]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
     if nivel_ == 5:
       print("Quelle élégance de France \n")
       lista = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche", "automne", "hiver", "printemps", "pronunciaton","mois", "janvier", "mars", "avril", "mai", "juin", "juillet", "septembre", "octobre", "novembre", "decembre", "coleurs", "noir", "violet", "blanc", "rouge", "rose", "vert", "bleu", "orange", "marron", "gris", "beige", "turquoise", "famille", "soeur", "fils", "fille", "oncle", "tante", "cousine", "cousin", "enfants", "neveu","verbes", "avoir", "pronominaux", "aller", "manger", "courir", "danser", "chanter", "voler", "vouloir", "pouvoir", "garder", "jouer", "nager", "contruire", "penser", "ajouter", "sortir", "entrer", "monter", "descendre", "partir", "retourner", "rentrer", "rester", "tomber", "venir", "arriver", "mourir","permettre", "permis", "mettre", "mis", "dormir", "mentir", "sentir", "exprimer", "emotions", "hereuse", "triste", "aimer", "destester", "partager","rage" "servir", "sourire", "traduire", "conduire", "produire", "attendre", "battre", "animaux", "chien", "chat", "cheval", "souris", "poisson", "lion"]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
     if nivel_ == 6:
       print("Das ist Liebe zum Essen von Scheiße \n")
       lista = [
@@ -1432,7 +1428,7 @@ if jugadores == 1:
   ]
       elemento_aleatorio = random.choice(lista)
       elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-      return(elemento_aleatorio)
+      return(elemento_aleatorio_)
 
   def img_ahoracado(): # La función de la cual sacamos los muñequitos es la siguiente. Esta permite guardar en una lista, el diccionario con cada muñequito, que estan ordenados secuencialmente para encajarlos con el número de intentos gastados, ademas de eso dependiendo del número de intentos que ingreso el usuario, se tiene configurado que lista sera retornada, para que tenga coherencia.
 
@@ -1970,17 +1966,12 @@ if jugadores == 1:
                 posicion += 1
                 continue
               if m == ("_ "):
-                contador = 0
-                if contador == 0:
                   for n in palabra:
                     if n == ingresa_:
                       lista[posicion] = ingresa_
                       posicion += 1
                     elif n!= ingresa_:
                       posicion += 1
-                else:
-                  contador = 0
-                  continue
             contador_ += 1
             print("Te quedan " +str(num_intento-gastados)+ " intentos")
             print(str(lista)+ "\n")
@@ -2065,7 +2056,7 @@ if jugadores == 1:
     if juego == True:
       puntos = puntos()
       puntos_ = puntos_ + puntos
-      print(" EL JUGADOR TIENE " +str(puntos_)+ " puntos")
+      print("EL JUGADOR TIENE " +str(puntos_)+ " puntos")
     elif juego == False:
       print("El jugador tiene " +str(puntos_)+ " puntos")
 
@@ -2128,7 +2119,7 @@ elif jugadores == 2:
         ]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
       if nivel_ == 2:
         print("JUGADOR " +str(jugador_act)+ " Vamos con Primiparo \n")
         lista = [
@@ -2160,7 +2151,7 @@ elif jugadores == 2:
         ]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
       if nivel_ == 3:
         print("JUGADOR " +str(jugador_act)+ " Vamos con maestro \n")
         lista =  [
@@ -2201,7 +2192,7 @@ elif jugadores == 2:
 ]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
       if nivel_ == 4:
         print("PLAYER " +str(jugador_act)+ " Let's do IT \n")
         lista = [
@@ -2216,13 +2207,13 @@ elif jugadores == 2:
     ]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
       if nivel_ == 5:
         print("JUGADOR " +str(jugador_act)+ " Quelle élégance de France \n")
         lista = ["lundi", "mardi", "mercredi", "jeudi", "vendredi", "samedi", "dimanche", "automne", "hiver", "printemps", "pronunciaton","mois", "janvier", "mars", "avril", "mai", "juin", "juillet", "septembre", "octobre", "novembre", "decembre", "coleurs", "noir", "violet", "blanc", "rouge", "rose", "vert", "bleu", "orange", "marron", "gris", "beige", "turquoise", "famille", "soeur", "fils", "fille", "oncle", "tante", "cousine", "cousin", "enfants", "neveu","verbes", "avoir", "pronominaux", "aller", "manger", "courir", "danser", "chanter", "voler", "vouloir", "pouvoir", "garder", "jouer", "nager", "contruire", "penser", "ajouter", "sortir", "entrer", "monter", "descendre", "partir", "retourner", "rentrer", "rester", "tomber", "venir", "arriver", "mourir","permettre", "permis", "mettre", "mis", "dormir", "mentir", "sentir", "exprimer", "emotions", "hereuse", "triste", "aimer", "destester", "partager","rage" "servir", "sourire", "traduire", "conduire", "produire", "attendre", "battre", "animaux", "chien", "chat", "cheval", "souris", "poisson", "lion"]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
       if nivel_ == 6:
         print("JUGADOR " +str(jugador_act)+ " Das ist Liebe zum Essen von Scheiße \n")
         lista = [
@@ -2238,7 +2229,7 @@ elif jugadores == 2:
     ]
         elemento_aleatorio = random.choice(lista)
         elemento_aleatorio_ = ''.join((c for c in unicodedata.normalize('NFD', elemento_aleatorio) if unicodedata.category(c) != 'Mn'))
-        return(elemento_aleatorio)
+        return(elemento_aleatorio_)
 
     def img_ahoracado(): # La función de la cual sacamos los muñequitos es la siguiente. Esta permite guardar en una lista, el diccionario con cada muñequito, que estan ordenados secuencialmente para encajarlos con el número de intentos gastados, ademas de eso dependiendo del número de intentos que ingreso el usuario, se tiene configurado que lista sera retornada, para que tenga coherencia.
       if num_intento == 3:
@@ -2775,16 +2766,12 @@ elif jugadores == 2:
                   posicion += 1
                   continue
                 if m == ("_ "):
-                  contador = 0
-                  if contador == 0:
                     for n in palabra:
-                      if n == ingresa_:
+                        if n == ingresa_:
                         lista[posicion] = ingresa_
                         posicion += 1
-                      elif n!= ingresa_:
+                        elif n!= ingresa_:
                         posicion += 1
-                  else:
-                    contador = 0
                     continue
               contador_ += 1
               print("Te quedan " +str(num_intento-gastados)+ " intentos")
@@ -2794,8 +2781,7 @@ elif jugadores == 2:
               continue
           else:
             upper = ingresa_.upper()
-            print("JUGADOR " +str(jugador_act)+ " , " +str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
-            contador = 0
+            print("JUGADOR " +str(jugador_act)+  +str(upper)+ " ES INCORRECTO INTENTA NUEVAMENTE")
             gastados += 1
             print("JUGADOR " +str(jugador_act)+ " Has gastado " +str(gastados)+ " intentos, te quedan " +str(num_intento-gastados)+ "\n")
             print(str(lista)+ "\n")
